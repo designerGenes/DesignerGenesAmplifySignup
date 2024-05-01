@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0606ABE5878BD2759B483A04 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 268100FC2C85E490F3350CF8 /* amplifyconfiguration.json */; };
+		9EC118BE54EDF63EB247C0DA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AC75C1AD51DAE358A4955F3D /* awsconfiguration.json */; };
 		A80B95802BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */; };
 		A80B95822BE2EA1E007CBF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B95812BE2EA1E007CBF3B /* ContentView.swift */; };
 		A80B95842BE2EA1F007CBF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B95832BE2EA1F007CBF3B /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 		A80B95912BE2EA1F007CBF3B /* DesignerGenesSignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B95902BE2EA1F007CBF3B /* DesignerGenesSignupTests.swift */; };
 		A80B959B2BE2EA1F007CBF3B /* DesignerGenesSignupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B959A2BE2EA1F007CBF3B /* DesignerGenesSignupUITests.swift */; };
 		A80B959D2BE2EA1F007CBF3B /* DesignerGenesSignupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B959C2BE2EA1F007CBF3B /* DesignerGenesSignupUITestsLaunchTests.swift */; };
+		A81BF4D22BE3010400675349 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = A81BF4D12BE3010400675349 /* AWSAPIPlugin */; };
+		A81BF4D42BE3010400675349 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = A81BF4D32BE3010400675349 /* AWSDataStorePlugin */; };
+		A81BF4D62BE3010400675349 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = A81BF4D52BE3010400675349 /* Amplify */; };
+		A81BF4D82BE303AD00675349 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BF4D72BE303AD00675349 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		268100FC2C85E490F3350CF8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		A80B957C2BE2EA1E007CBF3B /* DesignerGenesSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignerGenesSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerGenesSignupApp.swift; sourceTree = "<group>"; };
 		A80B95812BE2EA1E007CBF3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,8 @@
 		A80B95962BE2EA1F007CBF3B /* DesignerGenesSignupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignerGenesSignupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80B959A2BE2EA1F007CBF3B /* DesignerGenesSignupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerGenesSignupUITests.swift; sourceTree = "<group>"; };
 		A80B959C2BE2EA1F007CBF3B /* DesignerGenesSignupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerGenesSignupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A81BF4D72BE303AD00675349 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AC75C1AD51DAE358A4955F3D /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81BF4D62BE3010400675349 /* Amplify in Frameworks */,
+				A81BF4D22BE3010400675349 /* AWSAPIPlugin in Frameworks */,
+				A81BF4D42BE3010400675349 /* AWSDataStorePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F26C20B3223A44776F86041 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				AC75C1AD51DAE358A4955F3D /* awsconfiguration.json */,
+				268100FC2C85E490F3350CF8 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		A80B95732BE2EA1E007CBF3B = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +99,7 @@
 				A80B958F2BE2EA1F007CBF3B /* DesignerGenesSignupTests */,
 				A80B95992BE2EA1F007CBF3B /* DesignerGenesSignupUITests */,
 				A80B957D2BE2EA1E007CBF3B /* Products */,
+				4F26C20B3223A44776F86041 /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +118,7 @@
 			children = (
 				A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */,
 				A80B95812BE2EA1E007CBF3B /* ContentView.swift */,
+				A81BF4D72BE303AD00675349 /* DataManager.swift */,
 				A80B95832BE2EA1F007CBF3B /* Assets.xcassets */,
 				A80B95852BE2EA1F007CBF3B /* Preview Content */,
 			);
@@ -143,6 +166,11 @@
 			dependencies = (
 			);
 			name = DesignerGenesSignup;
+			packageProductDependencies = (
+				A81BF4D12BE3010400675349 /* AWSAPIPlugin */,
+				A81BF4D32BE3010400675349 /* AWSDataStorePlugin */,
+				A81BF4D52BE3010400675349 /* Amplify */,
+			);
 			productName = DesignerGenesSignup;
 			productReference = A80B957C2BE2EA1E007CBF3B /* DesignerGenesSignup.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +243,9 @@
 				Base,
 			);
 			mainGroup = A80B95732BE2EA1E007CBF3B;
+			packageReferences = (
+				A81BF4D02BE3010400675349 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = A80B957D2BE2EA1E007CBF3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +264,8 @@
 			files = (
 				A80B95872BE2EA1F007CBF3B /* Preview Assets.xcassets in Resources */,
 				A80B95842BE2EA1F007CBF3B /* Assets.xcassets in Resources */,
+				9EC118BE54EDF63EB247C0DA /* awsconfiguration.json in Resources */,
+				0606ABE5878BD2759B483A04 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80B95822BE2EA1E007CBF3B /* ContentView.swift in Sources */,
+				A81BF4D82BE303AD00675349 /* DataManager.swift in Sources */,
 				A80B95802BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +622,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A81BF4D02BE3010400675349 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.33.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A81BF4D12BE3010400675349 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81BF4D02BE3010400675349 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		A81BF4D32BE3010400675349 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81BF4D02BE3010400675349 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		A81BF4D52BE3010400675349 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81BF4D02BE3010400675349 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A80B95742BE2EA1E007CBF3B /* Project object */;
 }
