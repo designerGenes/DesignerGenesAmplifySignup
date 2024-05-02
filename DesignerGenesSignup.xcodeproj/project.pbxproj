@@ -10,7 +10,7 @@
 		0606ABE5878BD2759B483A04 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 268100FC2C85E490F3350CF8 /* amplifyconfiguration.json */; };
 		9EC118BE54EDF63EB247C0DA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AC75C1AD51DAE358A4955F3D /* awsconfiguration.json */; };
 		A80B95802BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */; };
-		A80B95822BE2EA1E007CBF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B95812BE2EA1E007CBF3B /* ContentView.swift */; };
+		A80B95822BE2EA1E007CBF3B /* EntrySignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B95812BE2EA1E007CBF3B /* EntrySignupView.swift */; };
 		A80B95842BE2EA1F007CBF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B95832BE2EA1F007CBF3B /* Assets.xcassets */; };
 		A80B95872BE2EA1F007CBF3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B95862BE2EA1F007CBF3B /* Preview Assets.xcassets */; };
 		A80B95912BE2EA1F007CBF3B /* DesignerGenesSignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B95902BE2EA1F007CBF3B /* DesignerGenesSignupTests.swift */; };
@@ -43,7 +43,7 @@
 		268100FC2C85E490F3350CF8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		A80B957C2BE2EA1E007CBF3B /* DesignerGenesSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignerGenesSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerGenesSignupApp.swift; sourceTree = "<group>"; };
-		A80B95812BE2EA1E007CBF3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A80B95812BE2EA1E007CBF3B /* EntrySignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySignupView.swift; sourceTree = "<group>"; };
 		A80B95832BE2EA1F007CBF3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80B95862BE2EA1F007CBF3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A80B958C2BE2EA1F007CBF3B /* DesignerGenesSignupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignerGenesSignupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +116,10 @@
 		A80B957E2BE2EA1E007CBF3B /* DesignerGenesSignup */ = {
 			isa = PBXGroup;
 			children = (
+				A81BF4DB2BE4063E00675349 /* Models */,
+				A81BF4DA2BE4063200675349 /* Controllers */,
+				A81BF4D92BE4062D00675349 /* Views */,
 				A80B957F2BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift */,
-				A80B95812BE2EA1E007CBF3B /* ContentView.swift */,
-				A81BF4D72BE303AD00675349 /* DataManager.swift */,
 				A80B95832BE2EA1F007CBF3B /* Assets.xcassets */,
 				A80B95852BE2EA1F007CBF3B /* Preview Content */,
 			);
@@ -148,6 +149,29 @@
 				A80B959C2BE2EA1F007CBF3B /* DesignerGenesSignupUITestsLaunchTests.swift */,
 			);
 			path = DesignerGenesSignupUITests;
+			sourceTree = "<group>";
+		};
+		A81BF4D92BE4062D00675349 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A80B95812BE2EA1E007CBF3B /* EntrySignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A81BF4DA2BE4063200675349 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A81BF4D72BE303AD00675349 /* DataManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A81BF4DB2BE4063E00675349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80B95822BE2EA1E007CBF3B /* ContentView.swift in Sources */,
+				A80B95822BE2EA1E007CBF3B /* EntrySignupView.swift in Sources */,
 				A81BF4D82BE303AD00675349 /* DataManager.swift in Sources */,
 				A80B95802BE2EA1E007CBF3B /* DesignerGenesSignupApp.swift in Sources */,
 			);

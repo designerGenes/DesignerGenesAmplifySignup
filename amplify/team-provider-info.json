@@ -9,11 +9,22 @@
       "UnauthRoleName": "amplify-designergenessignup-dev-7847a-unauthRole",
       "StackName": "amplify-designergenessignup-dev-7847a",
       "StackId": "arn:aws:cloudformation:us-west-2:988021995383:stack/amplify-designergenessignup-dev-7847a/7de86a90-080f-11ef-b905-0ab93b92202b",
-      "AmplifyAppId": "d3d5usthtzoghi"
+      "AmplifyAppId": "d3d5usthtzoghi",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-designergenessignup-dev-7847a-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "api": {
         "amplifyDatasource": {}
+      },
+      "auth": {
+        "designergenessignup6a4f51866a4f5186": {}
+      },
+      "function": {
+        "designergenessignup6a4f51866a4f5186PreSignup": {
+          "DOMAINDENYLIST": "wiggles,com, yahoo.com",
+          "deploymentBucketName": "amplify-designergenessignup-dev-7847a-deployment",
+          "s3Key": "amplify-builds/designergenessignup6a4f51866a4f5186PreSignup-5a7743615a4947497839-build.zip"
+        }
       }
     }
   }

@@ -11,7 +11,7 @@ import SwiftUI
 struct DesignerGenesSignupApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntrySignupView()
         }
     }
 }
